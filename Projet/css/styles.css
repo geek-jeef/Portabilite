@@ -1,0 +1,284 @@
+body {
+  font-size: 16px;
+  color: black;
+  background-color: #DDDDDD;
+}
+
+body h1{
+  text-transform: bold;
+  text-decoration: underline;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #317BB9;
+  border-radius: 0;
+  border: 0;
+  min-height: 100px;
+}
+
+#logo-img {
+
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+
+}
+#logo-img2 {
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Projet name */
+  font-family: 'Lora', serif;
+  color: #FFFF19;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* UNIVERSITÉ DE LOMÉ / ENSI */
+  color: #FFFF19;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #FFFF19;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #808080;
+}
+#nav-list a:nth-child {
+  background: #808080;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #FFFF19;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -20px;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  color: white;
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#TUMBA, #DEJEAN, #GOA {
+  line-height: 2;
+}
+#TUMBA > span, #DEJEAN > span ,#GOA > span   {
+  font-size: 1.3em;
+}
+/* END FOOTER */
+
+
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #0090FF;
+  border: 2px solid #0090FF;
+}
+
+#ContenuSommaire .btn-group, .dropdown-menu{
+
+  width: -webkit-fill-available;
+
+}
+#AllezAuSommaire{
+  font-size: 0.5em;
+  font-style: italic;
+}
+
+.btn-group .GrandTitre{
+  width: 90%;
+}
+
+.btn-group .VersSousTitre{
+  width: 10%;
+}
+.dropdown-menu>li>a{
+  text-align: center;
+}
+
+
+.panel-default>.panel-heading {
+    color: white;
+    background-color: #317BB9;
+    border-color: #ddd;
+}
+
+/* END HOME PAGE */
+
+
+
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  
+
+  #jumbotronMain {
+    background: url('../images/portabilite-1200.png') no-repeat;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /* Header */
+ 
+#logo-img {
+
+  width: 100px;
+  height: 100px;
+  margin: 5px 5px 5px 0;
+
+}
+#logo-img2 {
+
+  width: 100px;
+  height: 100px;
+    margin: 5px 5px 5px 0;
+
+}
+
+  /* End Header */
+
+  /* Home Page */
+  #jumbotronMain {
+    background: url('../images/portabilite-992.png') no-repeat;
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+#logo-img {
+
+  width: 75px;
+  height: 75px;
+  margin: 5px 5px 5px 0;
+
+}
+  /* Home Page */
+  
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+
+  
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Projet name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #grand-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #317BB9;
+    color: white;
+    text-align: center;
+  }
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+ 
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
